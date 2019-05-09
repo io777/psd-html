@@ -29,6 +29,7 @@ body {
 //  border: 1px solid red;
 //}
 
+// NAVIGATION PANEL
 .nav {
   background-color: #ffffff;
   height: 68px;
@@ -45,6 +46,10 @@ body {
     list-style: none;
     margin: 0;
   }
+  &__right-menu {
+    display: flex;
+    align-items: center;
+  }
   &__item {
     display: inline;
     padding-right: 40px;
@@ -57,6 +62,16 @@ body {
         cursor: pointer;
       }
     }
+  }
+  &__btn {
+    width: 104px;
+    height: 37px;
+    color: #ffffff;
+    border-radius: 5px;
+    border-top: 1px solid #1784d1;
+    border-left: 1px solid #1784d1;
+    border-right: 1px solid #1784d1;
+    background: linear-gradient(to top, #1784d1, #37b2f8);
   }
   &__logo {
     font-size: 36.35px;
@@ -74,3 +89,111 @@ body {
     }
   }
 }
+
+// BANNER
+.banner {
+  background-image: url("/assets/images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 534px;
+  position: relative;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 52.35px;
+    font-weight: 700;
+  }
+  &__subtitle {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 52.35px;
+    font-weight: 100;
+  }
+  &__btn {
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 0px 0px 6px rgba(0,0,0,0.3);
+    background: linear-gradient(to top, rgb(52,174,34) 0%, rgb(110,210,88) 100%);
+    width: 271px;
+    height: 56px;
+    margin-top: 40px;
+    font-size: 34.35px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  &__block {
+    background-image: url("/assets/images/block.png");
+    position: absolute;
+    height: 252px;
+    width: 489px;
+    z-index: 9999;
+    top: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+//FEATURE
+.feature {
+  background-color: #ececec;
+  height: 570px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__row {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    margin-bottom: 10px;
+  }
+  &__slogan {
+    font-size: 20.35px;
+    color: rgb(126, 124, 124);
+  }
+  &__title {
+    font-size: 26.35px;
+    color: rgb(126, 124, 124);
+    ine-height: 1.29;
+  }
+}
+
+//FOOTER
+.footer {
+  height: 30px;
+  background-color: #414141;
+  text-align: center;
+  font-size: 14.35px;
+  color: rgba(255, 255, 255, 0.502);
+  &__container {
+    height: 100%;
+  }
+  &__row {
+    height: 100%;
+  }
+}
+
+
+
+
